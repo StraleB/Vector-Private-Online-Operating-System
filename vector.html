@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Vector system</title>
+</head>
+
+<body onload="startTime()">
+
+    <!--Log in Section-->
+    <div class="logIn">
+            <img src="images/logo.png" alt="logo">
+            <input type="password" placeholder="Enter your password" required>
+            <input type="submit" class="submit">
+            <a href="#">need help?...</a>
+ 
+
+    </div>
+
+    <!--Container section-->
+    <div class="mainContainer">
+        <div class="timeAndDate">
+            <p id="time">22:17</p>
+            <img src="images/sunIcon.png" alt="sun">
+            <p id="temp"> 25°C</p>
+            <p id="date">19.7.2016</p>
+        </div>
+        <section class="icons">
+            <li><img src="images/discIcon.png" alt="disc">
+                <p>Storage</p>
+            </li>
+            <li><img src="images/internetIcon.png" alt="internet">
+                <p>Connection</p>
+            </li>
+            <li><img src="images/folder.png" alt="folder">
+                <p>My Files</p>
+            </li>
+        </section>
+        <section class="startUi">
+
+            <div class="leftSide">
+                <ul class="programList">
+                    <p>Apps</p>
+                    <li><img src="images/vmusic.png" height="35" width="38"> Vector Music</li>
+                    <li> <img src="images/photo.png" height="35" width="38"> Vector Pictures</li>
+                    <li><img src="images/visual.png" height="35" width="38"> Visual Studio Code</li>
+                    <li><img src="images/settngs.png" height="35" width="38"> Settings</li>
+                    <li><img src="images/zip.png" height="35" width="38"> V-Zipper</li>
+                    <li><img src="images/vdocuments.png" height="35" width="38"> Vector Documents</li>
+                </ul>
+            </div>
+            <div class="rightSide">
+                <section class="storage">
+                    <h2>Your storage</h2>
+                    <img src="images/discIcon.png" alt="storage">
+                    <figcaption>A:unit 20GB/50GB</figcaption>
+                    <div class="progress" style="margin:-2.3em 24.7em;">
+                        <div class="bar"></div>
+                    </div>
+                    <img src="images/discIcon.png" alt="storageB">
+                    <div class="progress" style="margin:-1em 24.7em;">
+                        <div class="bar" style=" background:rgb(255, 25, 82); width: 3em;"></div>
+                    </div>
+                    <figcaption>B:unit 40GB/50GB</figcaption>
+                </section>
+
+                <section class="customize">
+                    <h2>Customize</h2><img src="images/palette.png" alt="palette" height="30" width="30"
+                        style="position: absolute;margin:-1.7em 8em;">
+                    <img src="images/AddWallpaper.jpg" alt="addWallpaper" height="100" width="180">
+                    <ul id="customNav">
+                        <li><a href="#">Customize theme</a></li>
+                        <li><a href="#">Choose background</a></li>
+                        <li><a href="#">Choose font</a></li>
+                    </ul>
+                </section>
+
+                <section class="profile">
+                    <p style="float:left; margin:2em 3em;">Username: <a href="#">User123</a></p>
+                    <p style="float:left; margin:0em 3em;">Mail: <a href="#">randomMail@somemail.com</a></p>
+                    <img src="images/logo.png" alt="userIcon" height="120" width="120">
+                </section>
+            </div>
+        </section>
+        <section class="startBar">
+            <div class="vectorStart" onclick="myFunction()"></div>
+            <input type="text" placeholder="Type here to search">
+            <button><i class="fa fa-search"></i></button>
+            <img src="images/startbarLine.png" alt="line">
+        </section>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

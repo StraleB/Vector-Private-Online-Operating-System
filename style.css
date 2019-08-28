@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+/*font-family: 'Noto Sans KR', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+/*font-family: 'Lexend Deca', sans-serif;*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: url('images/cursor.png'), auto;
+}
+
+body {
+    background: url(images/wallpaper2.png)no-repeat;
+    background-size: 100% 60em;
+     cursor: url('images/cursor.png'), auto;
+}
+
+.logIn {
+    position: absolute;
+    z-index: 3;
+    background: url(images/blur.png);
+    height: 100%;
+    width: 100%;
+    margin: -1.2em 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.logIn img {
+    margin: 4em 40%;
+}
+
+.logIn input {
+    margin: 0 43.4%;
+}
+
+.logIn input[type="password"] {
+    height: 2em;
+    width: 14.2em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.logIn input[type="submit"] {
+    height: 2em;
+    width: 10.3em;
+    font-size:1.4em; 
+    margin-top: 10px;
+    padding:4px 10px; 
+}
+
+.logIn a{
+    margin: 1em 47%;
+    color: rgb(234, 255, 45);
+    font-size: 0.9em;
+}
+
+.startBar {
+    background: #00a2a7;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 3em;
+}
+
+.vectorStart {
+    background: url(images/startIcon.png)no-repeat;
+    background-size: 100% 100%;
+    height: 3em;
+    width: 3em;
+    transition: all 0.3s;
+}
+
+/*https://i.ibb.co/B6LmbRV/start-Icon.png*/
+
+.vectorStart:hover {
+    background: url(images/startIconDarkened.png);
+    background-size: 100% 100%;
+    height: 3em;
+    width: 3em;
+    cursor: url('images/pointer.png'), auto;
+}
+
+
+
+.timeAndDate {
+    height: 10em;
+    width: 15em;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 2em 2em;
+    float: right;
+    background: rgba(255, 255, 255, 0.205);
+    text-align: center;
+    color: white;
+}
+
+#time {
+    font-size: 3em;
+}
+
+#date {
+    font-size: 1.5em;
+    margin: 1.4em 0
+}
+
+img[alt=sun] {
+    margin: -0.4em 4.0em;
+    float: right;
+
+}
+
+#temp {
+    font-weight: bold;
+    font-size: 1.8em;
+    float: left;
+    margin: -1.2em 2.6em;
+}
+
+.startUi {
+    position: absolute;
+    background: #00a2a7;
+    height: 40em;
+    width: 47em;
+    border: 1px solid white;
+    margin: -9em 0;
+    box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, 0.274);
+    display: none;
+}
+
+.leftSide {
+    background: #0a7a7e;
+    float: left;
+    width: 14em;
+    height: 40em;
+}
+
+.leftSide ul {
+    font-family: 'Lexend Deca', sans-serif;
+    color: rgb(238, 238, 238);
+    line-height: 4.2em;
+}
+
+.leftSide p {
+    color: rgba(255, 255, 255, 0.966);
+    font-size: 1.6em;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0em 2.7em;
+}
+
+.leftSide li {
+    padding-left: 7px;
+    transition: all 0.15s;
+}
+
+.leftSide li:hover {
+    background: #09958e;
+    cursor: url('images/pointer.png'), auto;
+}
+
+.leftSide li img {
+    background: #ffffff;
+    vertical-align: -10px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.rightSide {
+    float: right;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-top: 10px;
+}
+
+.storage {
+    background: rgba(255, 255, 255, 0.349);
+    width: 30em;
+    margin: 0em 1em;
+}
+
+figcaption {
+    width: 100%;
+    padding-left: 11px;
+    padding-top: 10px;
+}
+
+.progress {
+    height: 1em;
+    width: 4em;
+    border: 1px solid black;
+    background: white;
+    float: right;
+}
+
+.bar {
+    height: 1em;
+    width: 2em;
+    background: rgb(65, 207, 136);
+}
+
+.customize {
+    background: rgba(255, 255, 255, 0.349);
+    width: 30em;
+    margin: 1em 1em;
+}
+
+.profile {
+    background: rgba(255, 255, 255, 0.349);
+    width: 30em;
+    height: 10em;
+    margin: 1em 1em;
+}
+
+
+img[alt="userIcon"] {
+    margin: 1em 5em;
+    position: absolute;
+    cursor: url('images/pointer.png'), auto;
+}
+
+img[alt="addWallpaper"] {
+    padding: 10px 0 10px 10px;
+    cursor: url('images/pointer.png'), auto;
+}
+
+.profile a {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+
+#customNav {
+    float: right;
+    margin: -8em 10em;
+    font-size: 0.85em;
+}
+
+#customNav li {
+    list-style: none;
+}
+
+#customNav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    line-height: 2em;
+    text-shadow: 1px 1px black;
+}
+
+#customNav li a:hover {
+    color: rgb(88, 88, 88);
+}
+
+input[placeholder="Type here to search"] {
+    margin: -3.58em 3.5em;
+    float: left;
+    height: 3.4em;
+    width: 17em;
+    outline: none;
+    border: 1px solid #00a2a7;
+}
+
+button {
+    background: white;
+    color: #00a2a7;
+    float: left;
+    margin: -2.2em 12.4em;
+    border: 1px solid #00a2a7;
+    cursor: pointer;
+    border-left: transparent;
+    font-size: 22px;
+    padding: 10px 17px;
+    outline: none;
+}
+
+img[alt="line"] {
+    float: right;
+    margin: -3.5em 0;
+    height: 3.5em;
+    width: 9.8em;
+}
+
+.icons {
+    width: 10em;
+}
+
+.icons li {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 0.2s;
+}
+
+.icons li:hover {
+    background: rgba(123, 204, 207, 0.52);
+    border-radius: 2px;
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.308);
+    cursor: pointer;
+}
+
+.icons p {
+    margin: 0 1em;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(255, 254, 254);
+    text-shadow: 1px 1px black;
+    font-size: 0.85em;
+}
